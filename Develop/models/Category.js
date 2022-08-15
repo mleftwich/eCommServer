@@ -1,0 +1,26 @@
+// IMPORT SEQUELIZE
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection.js");
+
+
+// CREATE CATEGORY WITH FIELDS
+class Category extends Model {}
+
+
+Category.init(
+  {
+    category_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    timestamps: true,
+    freezeTableName: true,
+    underscored: true,
+    modelName: "category",
+  }
+);
+
+module.exports = Category;
