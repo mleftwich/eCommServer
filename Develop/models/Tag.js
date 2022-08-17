@@ -7,7 +7,7 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    tage_name: {
+    tag_name: {
       type: DataTypes.STRING,
     },
   },
