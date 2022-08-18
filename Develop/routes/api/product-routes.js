@@ -14,7 +14,9 @@ router.get('/', (req, res) => {
     ]
   }).then(products => {
     res.json(products)
-  })
+  }).catch(err => {
+    res.status(500).json({error: 'There was an error, try again later.'})
+   })
 });
 
 // get one product
@@ -25,7 +27,9 @@ router.get('/:id', (req, res) => {
     { model: Category, model: Tag }
   ]}).then(product => {
     res.json(product)
-  })
+  }).catch(err => {
+    res.status(500).json({error: 'There was an error, try again later.'})
+   })
 });
 
 // create new product
