@@ -4,6 +4,7 @@
   
   ## Table of Contents
   * [Description](#description)
+  * [Technologies](#technologies)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
@@ -14,9 +15,15 @@
 ---
 
   ## Description
-  This week we were tasked with writing the back end server of an E-commerce site. We were to configure the endpoints for the server using express.js and use sequelize to talk to the site's database on the backend, to be able to retrieve all products, categories and tags as a whole and individually, and create, update and delete the relevant items in the database. You can view a demonstration of the functionality [here](https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view).
+  This is the back end server for an e-Commerce website. Configured endpoints for the server using express.js and uses sequelize to talk to the site's database on the backend, to be able to retrieve all products, categories and tags as a whole and individually, and create, update and delete the relevant items in the database. You can view a demonstration of the functionality [here](https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view).
 
   ![screenshot](./Assets/imgs/screenshot.png)
+
+  ## Technologies
+  * MySQL
+  * node.js
+      * express
+      * sequelize
 
   ## Installation
    Clone the repo, npm install
@@ -31,11 +38,11 @@
 
 
   ## Guidelines
-   
+   Use a program like insomnia for functionality.
 
 
   ## Tests
-   
+   Tests run in development.
 
 
   ## License
